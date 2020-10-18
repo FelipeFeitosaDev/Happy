@@ -5,5 +5,17 @@
 
 body{
     height: 100vh;
+    color: white;
+}
+
+body, input, button, textarea{
+    font-size: 1.1rem;
+    line-height: 1.3;
+    font-family: 'Nunito', sans-serif;
+}
+
+#page-landing{
     background: linear-gradient(329.54deg, #29b6d1 0%, #00c7c7 100%);
+    min-height: 100vh;
+    text-align: center;
 }
