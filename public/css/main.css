@@ -52,3 +52,22 @@ body, input, button, textarea{
 
     margin: auto;
 }
+
+/*animações*/
+@keyframes up{
+    from {
+        opacity:0;
+        transform: translateY(16px);
+    }
+    to {
+        opacity:1;
+        transform: translateY(0);
+    }
+}
+
+.animated-up{
+    animation-name: up;
+    animation-duration: 300ms;
+    /*o feito irá permanecer após o termino da animação*/
+    animation-fill-mode: backwards;
+}
