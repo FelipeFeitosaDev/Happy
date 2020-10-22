@@ -19,40 +19,6 @@ body, input, button, textarea{
     font: 400 1rem/1.2 'Nunito', sans-serif;
 }
 
-#page-landing{
-    background: linear-gradient(329.54deg, #29b6d1 0%, #00c7c7 100%);
-    min-height: 100vh;
-    text-align: center;
-
-    display: flex;
-   
-}
-
-#container{
-    margin: auto;
-    width: 90%;
-}
-
-
-.location, h1, .visit p{
-    height: 16vh;   
-}
-
-.visit a{
-    height: 4.5rem;
-    width: 4.5rem;
-    background: #ffd666;
-
-    border:none;
-    border-radius: 1.7rem;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    margin: auto;
-}
-
 /*animações*/
 @keyframes up{
     from {
