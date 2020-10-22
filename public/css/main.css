@@ -19,26 +19,6 @@ body, input, button, textarea{
     font: 400 1rem/1.2 'Nunito', sans-serif;
 }
 
-/*animações*/
-@keyframes up{
-    from {
-        opacity:0;
-        transform: translateY(16px);
-    }
-    to {
-        opacity:1;
-        transform: translateY(0);
-    }
-}
-
-.animate-up{
-    /*up é o nome do @keyframes*/
-    animation-name: up;
-    animation-duration: 300ms;
-    /*o feito irá permanecer após o termino da animação*/
-    animation-fill-mode: backwards;
-}
-
 #logo{
     animation-delay: 50ms;
 }
