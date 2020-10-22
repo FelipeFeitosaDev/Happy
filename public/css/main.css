@@ -65,7 +65,7 @@ body, input, button, textarea{
     }
 }
 
-.animated-up{
+.animate-up{
     animation-name: up;
     animation-duration: 300ms;
     /*o feito irá permanecer após o termino da animação*/
