@@ -66,8 +66,29 @@ body, input, button, textarea{
 }
 
 .animate-up{
+    /*up é o nome do @keyframes*/
     animation-name: up;
     animation-duration: 300ms;
     /*o feito irá permanecer após o termino da animação*/
     animation-fill-mode: backwards;
+}
+
+#logo{
+    animation-delay: 50ms;
+}
+
+.location{
+    animation-delay: 100ms;
+}
+
+main h1{
+    animation-delay: 150ms;
+}
+
+.visite p{
+    animation-delay: 200ms;
+}
+
+.visit a{
+    animation-delay: 250ms;
 }
