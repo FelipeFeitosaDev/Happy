@@ -15,26 +15,6 @@ rem: medida de font baseado no tamanho da fonte default do navegador conhecido c
 em: medida da font baseada no tamanha da font do elemento pai 
 */
 
-body, input, button, textarea{
-    font: 400 1rem/1.2 'Nunito', sans-serif;
-}
-
-#logo{
-    animation-delay: 50ms;
-}
-
-.location{
-    animation-delay: 100ms;
-}
-
-main h1{
-    animation-delay: 150ms;
-}
-
-.visite p{
-    animation-delay: 200ms;
-}
-
-.visit a{
-    animation-delay: 250ms;
+body, input, button, textarea, h1{
+    font: 400 1rem/1.1 'Nunito', sans-serif;
 }
