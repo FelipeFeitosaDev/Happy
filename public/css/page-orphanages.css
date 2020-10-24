@@ -1,0 +1,56 @@
+#page-orphanages{
+    width: 100%;
+    height: 100%;
+
+    display: flex; 
+}
+
+aside{
+    width: clamp(15rem, 25vw, 44rem);
+    background: linear-gradient(329.54deg, #15B6D6 0%, #15D6D6 100%);
+    padding: clamp(2rem, 5vw, 5rem);
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+
+}
+
+aside h2{
+    margin-top: 4rem;
+    font: 800 clamp(1.5rem, 4vw, 2rem) 'Nunito', sans-serif;
+}
+
+aside p{
+    margin-top: 2rem;
+    font: 400 .9rem/1.5 'Nunito', sans-serif;
+}
+
+aside footer p{
+    margin-top: .2rem;
+}
+
+/* button */
+
+a.create-orphanage{
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
+
+    width: 3.7rem;
+    height: 3.7rem;
+    background: #15C3D6;
+    border: 0;
+    border-radius: 1.3rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: background-color 200ms;
+}
+
+a.create-orphanage:hover{
+    background: #17D6EB;
+}
