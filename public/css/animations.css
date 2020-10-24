@@ -10,10 +10,25 @@
     }
 }
 
+@keyframes right{
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
 .animate-up{
     /*up é o nome do @keyframes*/
     animation-name: up;
     animation-duration: 300ms;
     /*o feito irá permanecer após o termino da animação*/
     animation-fill-mode: backwards;
+}
+
+.animate-right{
+    animation-name: right;
+    animation-duration: 300ms;
+
 }
