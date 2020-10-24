@@ -19,6 +19,15 @@
     }
 }
 
+@keyframes appear{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
 .animate-up{
     /*up é o nome do @keyframes*/
     animation-name: up;
@@ -31,4 +40,9 @@
     animation-name: right;
     animation-duration: 300ms;
 
+}
+
+.animate-appear{
+    animation-name: appear;
+    animation-duration: 300ms;
 }
