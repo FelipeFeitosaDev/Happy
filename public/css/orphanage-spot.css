@@ -1,0 +1,8 @@
+#orphanage-spot{
+    display: flex;
+    min-height: 100vh;
+}
+
+aside.sidebar{
+    position:fixed;
+}
