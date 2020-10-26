@@ -5,4 +5,128 @@
 
 aside.sidebar{
     position:fixed;
+    height: 100%;
+    padding: 2rem 1.5rem;
+    background: #15C3D6;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+aside.sidebar footer button{
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    border-radius: 1rem;
+    background: #12AFCB;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: background-color 200ms;
+}
+
+aside.sidebar footer button:hover{
+    background: #17D6EB;
+}
+
+.with-sidebar{
+    padding-left: 6.7rem;
+}
+
+.orphanage-details{
+    width: 42rem;
+    margin: 3rem auto;
+    background: white;
+    border: 1px solid #D3E2E5;
+    border-radius: 1.5rem;
+
+    overflow: hidden;
+}
+
+.orphanage-details > img{
+    width: 100%;
+    height: 15rem;
+    object-fit: cover; /*vai manter a proporção da imagem*/
+}
+
+.images{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 1rem;
+    margin: 1rem 2.5rem 0;
+}
+.images button{
+    border:0;
+    border-radius: 1rem;
+    background: none;
+    height: 5rem;
+    
+    
+    cursor: pointer;
+    /*overflow: hidden cria uma mascara para a foto*/
+    overflow: hidden;
+
+    opacity: 0.6;
+    transition: opacity 200ms;
+}
+
+.images button:hover,
+.images button.active{
+    opacity: 1;
+}
+
+.images button img{
+    width: 100%;
+    height: 5rem;
+    object-fit: cover;
+
+}
+
+/* .orphanage-details-content */
+.orphanage-details-content{
+    padding: 4rem;
+}
+
+.orphanage-details-content h1{
+    color: #4D6F80;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.5;
+
+    margin-bottom: 0.4rem;
+}
+
+.orphanage-details-content p{
+    color: #5C8599;
+    line-height: 1.5;
+    margin-top: 1rem;
+}
+
+/*map*/
+
+.map-container{
+    margin-top: 3rem;
+    background: #e6f7fb;
+    border: 1px solid #b3dae2;
+    border-radius: 1rem;
+}
+
+#mapid{
+    width: 100%;
+    height: 15rem;
+}
+
+.map-container footer{
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.map-container footer a{
+    color: #0089a5;
+    text-decoration: none;
 }
