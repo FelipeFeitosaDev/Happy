@@ -34,12 +34,16 @@ aside.sidebar footer button:hover{
     background: #17D6EB;
 }
 
+main{
+    flex: 1;
+}
+
 .with-sidebar{
     padding-left: 6.7rem;
 }
 
 .orphanage-details{
-    width: 42rem;
+    width: 40rem;
     margin: 3rem auto;
     background: white;
     border: 1px solid #D3E2E5;
@@ -89,7 +93,7 @@ aside.sidebar footer button:hover{
 
 /* .orphanage-details-content */
 .orphanage-details-content{
-    padding: 4rem;
+    padding: 4.5rem;
 }
 
 .orphanage-details-content h1{
@@ -105,6 +109,55 @@ aside.sidebar footer button:hover{
     color: #5C8599;
     line-height: 1.5;
     margin-top: 1rem;
+}
+
+.orphanage-details-content hr{
+    width: 100%;
+    height: 1px;
+
+    border: none;
+
+    background: #D3E3E6;
+    margin: 4rem 0;
+}
+
+.orphanage-details-content h2{
+    font-size: 2rem;
+    line-height: 2rem;
+    color: #4d6f80;
+}
+
+.open-details{
+    margin-top: 1,5rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+}
+
+.open-details div{
+    padding: 2.2rem 1.4rem;
+}
+
+.open-details img{
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.open-details .hour{
+    background: linear-gradient(149.97deg, #E6F7FB 8.13%, #FFFFFF 92.77%);
+    border: 1px solid #B3DAE2;
+    border-radius: 2rem;
+    color: #5C8599;
+
+}
+
+.open-details .open-on-weekends{
+    background: linear-gradient(154.16deg, #EDFFF6 7.85%, #FFFFFF 91.03%);
+    border: 1px solid #A1E9C5;
+    border-radius: 2rem;
+    color: #37C77F;
+
 }
 
 /*map*/
@@ -129,4 +182,36 @@ aside.sidebar footer button:hover{
 .map-container footer a{
     color: #0089a5;
     text-decoration: none;
+}
+
+.map-container .leaflet-container{
+    border-bottom: 1px solid #dde3f0;
+    border-radius: 1rem;
+}
+
+.primary-button{
+    margin-top: 3.4rem;
+    width: 100%;
+    height: 4rem;
+    border: none;
+    border-radius: 1.5rem;
+    background: #3cdc8c;
+    color: white;
+    
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: background-color 200ms;
+
+}
+
+.primary-button:hover{
+    background: #36cf82;
+}
+
+.primary-button img{
+    margin-right: 1rem;
 }
