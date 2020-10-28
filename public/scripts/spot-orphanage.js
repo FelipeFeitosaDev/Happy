@@ -31,3 +31,27 @@ L
 .marker([-23.5503558,-46.6380009],{icon})
 .addTo(map)
 
+
+//Image Gallery
+
+function selectImage(event){
+    const button = event.currentTarget;
+    const buttons = document.querySelectorAll('.images button');
+    
+    //removendo a classe .active de todos os botõess
+    buttons.forEach((button)=>{
+        button.classList.remove('active');
+    });
+
+    //mudar a imagem principal pelo thumbnail
+    const image = button.children[0];
+    const imageContainer = document.querySelector('.orphanage-details > img');
+    
+    imageContainer.src = image.src;
+
+    //adicionando a classe active no botão clicado
+    button.classList.add('active');
+
+
+
+}

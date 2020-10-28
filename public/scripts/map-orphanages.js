@@ -22,7 +22,7 @@ const popup = L.popup({
     minHeight: 100
 }).setContent(`
     Lar das meninas 
-    <a href="orphanage-spot.html?id=1" class="choose-orphanage">
+    <a href="spot-orphanage.html?id=1" class="choose-orphanage">
     <img src="./public/images/arrow-white.svg">
     </a>`);
 
