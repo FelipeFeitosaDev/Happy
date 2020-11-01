@@ -96,6 +96,11 @@ fieldset legend{
 .new-upload{
     position: relative;
 }
+
+.new-upload+.new-upload{
+    margin-top: 1rem;
+}
+
 .new-upload img{
     width: 90%;
 }
@@ -107,3 +112,5 @@ fieldset legend{
 
     cursor: pointer;
 }
+
+
