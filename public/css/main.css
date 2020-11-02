@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+:root{
+    font-size: 100%;
+}
+body{
+    height: 100vh;
+    color: white;
+    background: #EBF2F5;
+}
+
+/* 
+rem: medida de font baseado no tamanho da fonte default do navegador conhecido como root
+em: medida da font baseada no tamanha da font do elemento pai 
+*/
+
+body, input, button, textarea, h1{
+    font: 400 1rem/1.1 'Nunito', sans-serif;
+}
