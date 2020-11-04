@@ -34,11 +34,28 @@
                </header>
                <footer>
                    <strong>São Paulo</strong>
-                   <p>São Paulo </p>
+                   <p>São Paulo</p>
                </footer>
            </aside>
            <div id="mapid" class="animate-appear"></div>
-           <a href="form-orphanage.html" class="create-orphanage" title="cadastre um orfanato">
+
+            <!--#each vai criar um elemento para cada item da lista de orphanages, 
+            e vai acessar a propriedade de cada objeto dessa lista-->
+            <div class="orphanages">
+                {{#each orphanages}}
+
+                    <span hidden 
+                    data-id="{{this.id}}" 
+                    data-name="{{this.name}}"
+                    data-lat="{{this.lat}}"
+                    data-lng="{{this.lng}}">
+                    </span>
+
+                {{/each}}  
+            </div>
+            
+
+           <a href="/form-orphanage" class="create-orphanage" title="cadastre um orfanato">
                <img src="/images/plus.svg" alt="Criar orfanato">
            </a>
        </div>
