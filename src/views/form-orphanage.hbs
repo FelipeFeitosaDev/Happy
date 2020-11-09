@@ -39,7 +39,7 @@
                </footer>
            </aside>
             <main class="animate-appear with-sidebar">
-                <form action="">
+                <form action="save-orphanage" method="post" onsubmit="validate(event)">
                     <fieldset>
                         <legend>Dados</legend>
                         <div class="map-container">
@@ -76,7 +76,11 @@
 
                             <div class="images-upload" id="images">
                                 <div class="new-upload">
-                                    <input name="images" placeholder="Insira o link da foto aqui" required>
+                                    <input 
+                                    name="images" 
+                                    placeholder="Insira o link da foto aqui" 
+                                    type="url"
+                                    required>
                                     <span onclick="removeUpload(event)">
                                         <img src="/images/remove-file.svg" alt="">
                                     </span>
@@ -105,18 +109,18 @@
 
                         <div class="input-block">
                             <label for="open_weekends">Atende aos fins de semana?</label>
-                            <input type="hidden" id="open_weekends" name="open_weekends" value="1" required>
+                            <input type="hidden" id="open_on_weekends" name="open_on_weekends" value="1" required/>
 
                             <div class="button-select">
                                 <button 
-                                    data-set="1" 
+                                    data-value="1" 
                                     onclick="toggleSelect(event)" 
                                     type="button" 
                                     class="active">Sim
                                 </button>
                                
                                 <button 
-                                    data-set="0" 
+                                    data-value="0" 
                                     onclick="toggleSelect(event)" 
                                     type="button">Não
                                 </button>

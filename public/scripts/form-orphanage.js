@@ -69,9 +69,24 @@ function toggleSelect(event){
     const button = event.currentTarget;
     button.classList.add('active');
     //atualizar o input hidden com o valor que foi clicado para ser submetido ao banco de dados
-    const inputYN = document.querySelector('[name="open-on-weekend"]');
-    inputYN.value = button.dataset.value;
+    const input = document.querySelector('[name="open_on_weekends"]');
+    console.log(input);//null
+    input.value = button.dataset.value;
+  
+
 
     
 }
+
+// function validate(event){
+
+//     const lat = document.querySelector('[name="lat"]').value;
+//     const lng = document.querySelector('[name="lng"]').value;
+
+//     if(lat == '' || lng == ''){
+//         event.prevreventDefault();
+//         alert('Selecione um ponto no mapa');   
+//     }
+    
+// }
 
