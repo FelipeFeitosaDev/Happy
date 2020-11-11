@@ -1,7 +1,7 @@
 # Happy
 A web page to find vulnerable children's institutions and to be able to visit them
 
-<img align="center" width="60%" margin-bottom="80px" src="https://github.com/FelipeFeitosaDev/Happy/blob/master/public/images/Happy-cover.gif" style="max-width:100%;">
+<img align="center" width="100%" margin-bottom="80px" src="https://github.com/FelipeFeitosaDev/Happy/blob/master/public/images/Happy-cover.gif" style="max-width:100%;">
 
 ## Features
 
