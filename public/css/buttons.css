@@ -14,12 +14,7 @@
     justify-content: center;
 
     transition: background-color 200ms;
-    text-decoration: none;;
 
-}
-
-.primary-button a{
-    text-decoration: none;
 }
 
 .button-select{

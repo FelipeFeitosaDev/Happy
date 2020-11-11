@@ -1,0 +1,116 @@
+
+#page-landing{
+    background: linear-gradient(329.54deg, #29b6d1 0%, #00c7c7 100%);
+    min-height: 100vh;
+    text-align: center;
+
+    display: flex;
+   
+}
+
+#container{
+    margin: auto;
+    /*se o tamanho da tela for menor que 1024, o container sera 90% da tela 
+    se a tela for maior que 1024 o container manterá o tamanho de 1024px*/
+    width: min(90%, 64rem);
+}
+
+
+.location, h1, .visit p{
+    height: 16vh;   
+}
+
+#logo{
+    animation-delay: 50ms;
+    width: 10rem;
+}
+
+.location{
+    animation-delay: 100ms;
+    line-height: 1.5rem;
+}
+
+main h1{
+    animation-delay: 150ms;
+    font-weight: 800;
+    font-size: clamp(3rem, 7vw, 5rem);
+    margin-bottom: .5rem;
+}
+
+.visit a{
+    height: 4.5rem;
+    width: 4.5rem;
+    background: #ffd666;
+
+    border:none;
+    border-radius: 1.7rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: auto;
+
+    transition: background 200ms;
+    animation-delay: 250ms;
+}
+
+.visit a:hover{
+    background: #96feff;
+}
+
+.visit p{
+    animation-delay: 200ms;
+}
+
+
+/* Desktop Version */
+
+/*as regras serão aplicadas apartir de 760px para cima*/
+@media (min-width: 760px){
+    #container{
+        padding: 3.5rem;
+        background: url("../images/bg.svg") no-repeat 80% / clamp(25rem, 35vw, 40rem);
+    }
+    #logo{
+        width: 20%;
+    }
+
+    header{
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .location, h1, .visit p{
+        height: initial;
+    }
+    .location{
+        text-align: right;
+        line-height: 1.5rem;
+    }
+
+    main h1 {
+        font-weight: 800;
+        text-align: left;
+        width: min(15rem, 90%);
+        line-height: .88;
+        margin: clamp(10%, 8vh, 12%) 0 1rem;
+    }
+
+    .visit {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .visit p{
+        
+        text-align: left;
+        width: min(15rem, 80%);
+        line-height: 1.5rem;
+    }
+
+    .visit a{
+        margin: initial;
+    }
+}
