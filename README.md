@@ -9,8 +9,8 @@ Node Js: A web framework for javascript
 
 ## Getting started
 
-1. Clone this repo using `git clone https://github.com/FelipeFeitosaDev/ecoleta.git`
-2. Move yourself to the appropriate directory: `cd ecoleta`<br />
+1. Clone this repo using `git clone https://github.com/FelipeFeitosaDev/Happy.git`
+2. Move yourself to the appropriate directory: `cd happy`<br />
 3. Run `npm install` to install dependencies<br />
 
 ## License
