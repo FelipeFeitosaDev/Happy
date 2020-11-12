@@ -5,7 +5,7 @@ A web page to find vulnerable children's institutions and to be able to visit th
 
 ## Features
 
-Node Js: A web framework for javascript
+Node.Js with handlebars template engine
 
 ## Getting started
 
